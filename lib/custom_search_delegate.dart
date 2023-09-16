@@ -39,9 +39,7 @@ class CustomSearchDelegate extends SearchDelegate<String> {
   Widget buildLeading(BuildContext context) {
     return IconButton(
       icon: const Icon(Icons.arrow_back),
-      onPressed: () {
-        Navigator.of(context).pop();
-      },
+      onPressed: () => Navigator.of(context).pop(),
     );
   }
 
